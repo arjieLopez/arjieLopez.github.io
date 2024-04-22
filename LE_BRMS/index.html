@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Records Management System</title>
+    <style>
+        body{display: flex; justify-content: center; background: url(images/background.png) repeat-y; background-size: cover;}
+        #container{display: flex; align-items:center; box-shadow: 0px 0px 80px -15px rgba(22, 22, 22, 0.562); margin-top: 85px; width: 850px;}
+        #logo{width: 300px; height: 550px; background: linear-gradient(to right, rgb(87,0,0), rgb(168, 1, 1));}
+            #picture{display: flex; justify-content: center; margin-top: 130px;}
+            #picture img{width:120px; height:120px;}
+            #label{display: flex; justify-content: center; margin-top: 30px;}
+            #label img{width:260px; height:100px;}
+        #card{width: 600px; height: 550px; background-color: rgb(250, 250, 250);}
+            #greetings{display: flex; justify-content: center; margin-top: 70px;}
+            #form{display: flex; justify-content: center; margin-top:50px;font: 17px Arial, 'Arial Narrow Bold', sans-serif; font-weight: lighter; color:rgb(46, 46, 46)}
+            .textbox{margin-top: 6px; margin-bottom: 30px; border: solid 1px rgb(196, 196, 196); padding: 10px 120px 10px 10px; color: rgb(177, 177, 177); font: 15px Arial, Helvetica, sans-serif;}
+            .textbox:focus{color: rgb(10, 10, 10);}
+            #btn{margin-top: 30px; border: none; border-radius: 4px; padding: 8px 142px; background-color: rgb(129, 0, 0); color: rgb(236, 236, 236); text-align: center; font-size: 15px; font-weight: bold;}
+            #btn:hover{background-color: rgb(194, 0, 0);}
+            #btn:active{background-color: rgb(226, 0, 0);}
+
+        /*Laptop_1366x768*/
+        @media screen and (max-width: 1366px){
+            #container{box-shadow: 0px 15px 80px -15px rgba(22, 22, 22, 0.562); margin-top: 25px;}
+        }
+        /*Mobile*/
+        @media screen and (max-width: 768px){
+            body{background: linear-gradient(to right, rgb(87,0,0), rgb(168, 1, 1));}
+            #container{flex-direction: column; justify-content: center; box-shadow: none;width: 250px;}
+            #logo{display: flex; align-items:center; background: none; height:80px;}
+                #picture{margin: 0px;}
+                #picture img{width: 80px; height: 80px;}
+                #label{margin-bottom: 25px;}
+                #label img{width:216px; height:80px;}
+            #card{box-shadow: 8px 8px 10px 5px rgba(22, 22, 22, 0.562); margin-top: 30px; border-radius: 8px; width: 300px; height: 430px;}
+                #greetings{margin-top: 20px; font-size: 15px;}
+                #form{margin-top: 25px; font-size: 16px;}
+                .textbox{padding: 10px 50px 10px 10px;}
+                #btn{margin-top:10px; padding: 8px 50px}
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+            <div id="picture"><img src="images/logo.png" alt="Barangay Logo"></div>
+            <div id="label"><img src="images/label.png" alt="Barangay Records Management System"></div>
+        </div>
+        <div id="card">
+            <div>
+                <div id="greetings"><h1>Welcome!</h1></div>
+                <div id="form">
+                <form action="">
+                    <b>Username</b> <br>
+                    <input type="text" class="textbox" value="example@gmail.com"><br>
+                    <b>Password</b> <br>
+                    <input type="password" name="" class="textbox" value="Enter a password"><br>
+                    <input type="submit" name="" id="btn" value="Login">
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
